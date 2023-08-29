@@ -2,6 +2,13 @@
 
 提供了大量的常用串口校验方式
 
+## 使用示例
+
+```csharp
+ITLDG.DataCheck.Plugins.PluginCRC16_MODBUS crc16 = new ITLDG.DataCheck.Plugins.PluginCRC16_MODBUS();
+byte[] result = crc16.CheckData(tempData);
+```
+
 ## 已实现校验列举
 
 - BCC(Block Check Character/信息组校验码)
