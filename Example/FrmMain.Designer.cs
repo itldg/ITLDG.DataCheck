@@ -107,7 +107,6 @@
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(306, 21);
             this.txtData.TabIndex = 0;
-            this.txtData.Text = "01 03 10 10 00 05";
             // 
             // label1
             // 
@@ -373,8 +372,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(303, 17);
-            this.toolStripStatusLabel1.Text = "* CRC校验的结果已经反转,小端在前 ,其它校验大端在前";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(128, 17);
+            this.toolStripStatusLabel1.Text = "欢迎使用通用校验工具";
             // 
             // FrmMain
             // 

@@ -98,12 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ITLDG.DataCheck\ITLDG.DataCheck.csproj">
-      <Project>{8b49de83-f99e-405d-84b1-8215dba29160}</Project>
-      <Name>ITLDG.DataCheck</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="信息学.ico" />
     <Content Include="示例数据\BCC样本.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -111,6 +105,12 @@
     <Content Include="示例数据\CRC16样本.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITLDG.DataCheck\ITLDG.DataCheck.csproj">
+      <Project>{8b49de83-f99e-405d-84b1-8215dba29160}</Project>
+      <Name>ITLDG.DataCheck</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

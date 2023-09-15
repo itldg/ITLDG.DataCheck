@@ -6,7 +6,7 @@
 		<Title>ITLDG.DataCheck</Title>
 		<Authors>ITLDG</Authors>
 		<Description>常用的串口校验方式</Description>
-		<VersionPrefix>1.0.1</VersionPrefix>
+		<VersionPrefix>1.0.2</VersionPrefix>
 		<PackageProjectUrl>https://www.itldg.com</PackageProjectUrl>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
