@@ -4,9 +4,19 @@
 
 ## 使用示例
 
+现成校验
+
 ```csharp
 ITLDG.DataCheck.Plugins.PluginCRC16_MODBUS crc16 = new ITLDG.DataCheck.Plugins.PluginCRC16_MODBUS();
 byte[] result = crc16.CheckData(tempData);
+```
+
+自定义CRC16校验
+
+```csharp
+Crc16Parameters par = new Crc16Parameters(0x8971, 0xFFFF, true, true, true, 0x4285);
+ushort r = Crc16.CRC(par, DataByte);
+byte[] result = r.GetBytesBigEndian();
 ```
 
 ## 已实现校验列举
