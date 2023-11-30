@@ -133,8 +133,8 @@ namespace CRC
         public byte[] CheckByte(byte[] bytes)
         {
             byte[] hashBytes = ComputeHash(bytes, 0, bytes.Length);
-            int len = (int)Math.Floor(HashSize / 8.0);
-            byte[] res=new byte[len];
+            int len = Math.Max((int)Math.Floor(HashSize / 8.0), 1);
+            byte[] res = new byte[len];
             Array.Copy(hashBytes, res, len);
             //小端在前
             Array.Reverse(res);
